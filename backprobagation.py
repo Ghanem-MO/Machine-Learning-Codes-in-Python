@@ -63,10 +63,10 @@ print(f"Total Error (E) = {E:.4f}\n")
 
 # print("--- Gradients (Output Layer) ---")
 # Gradients for Output Layer Weights
-dE_dw7  = -e1 * phi_prime_a3 * y1
-dE_dw8  = -e2 * phi_prime_a4 * y1
-dE_dw9  = -e1 * phi_prime_a3 * y2
-dE_dw10 = -e2 * phi_prime_a4 * y2
+dE_dw7  = -e1 * phi_prime_a3 * h1
+dE_dw8  = -e2 * phi_prime_a4 * h1
+dE_dw9  = -e1 * phi_prime_a3 * h2
+dE_dw10 = -e2 * phi_prime_a4 * h2
 dE_dw11 = -e1 * phi_prime_a3 * 1.0  # Bias
 dE_dw12 = -e2 * phi_prime_a4 * 1.0  # Bias
 
